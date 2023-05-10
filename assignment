@@ -1,0 +1,98 @@
+// //a.)Get all the countries from the Asia continent /region using the Filter function
+
+// var xhr =new XMLHttpRequest();
+
+// xhr.open("GET","https://restcountries.com/v3.1/all",true);
+
+// xhr.send();
+
+// xhr.onload = function(){
+//     if (xhr.status>=200 && xhr.status<=300){
+//         let data = JSON.parse(this.response);
+
+// let total=data.filter(function(item){
+//     if(item.region=='Asia'){
+//     console.log("country name: "+item.name.common)
+//     }
+// })
+   
+// }
+// }
+
+// //b.)Get all the countries with a population of less than 2 lakhs using Filter function
+
+// var xhr=new XMLHttpRequest();
+
+// xhr.open("GET","https://restcountries.com/v3.1/all",true)
+
+// xhr.send();
+
+// xhr.onload=function(){
+//     if (xhr.status>=200&&xhr.status<=300){
+//         let data = JSON.parse(this.response);
+
+//         let result=data.filter(function(item){
+            
+//             if(item.population<200000){
+//             console.log("country name: "+item.name.common)
+//             }
+//         })
+//     }
+// }
+
+//c.)Print the following details name, capital, flag using forEach function
+
+// var xhr =new XMLHttpRequest();
+
+// xhr.open("GET","https://restcountries.com/v3.1/all",true);
+
+// xhr.send();
+
+// xhr.onload = function(){
+//     if (xhr.status>=200 && xhr.status<=300){
+//         let data = JSON.parse(this.response);
+
+//     let result=data.forEach((item)=>{
+//     console.log("name:"+item.name.common)
+//     console.log("capital:"+item.capital)
+//     console.log("flag-png:"+item.flags.png)
+//     console.log("flag-svg:"+item.flags.svg)
+    
+//     });
+
+   
+// }
+// }
+
+//d.)Print the total population of countries using reduce function
+
+// var xhr=new XMLHttpRequest();
+// xhr.open("GET","https://restcountries.com/v3.1/all",true);
+// xhr.send();
+// xhr.onload=function(){
+//     if(xhr.status>=200 && xhr.status<=300){
+//         let data=JSON.parse(this.response)
+        
+//         let total_population=data.reduce(function(p,c){
+//             return p+c.population
+//         },0)
+//         console.log("the total population of countries :"+total_population)
+//     }
+// }
+
+//e.)Print the country which uses US Dollars as currency.
+
+// var xhr =new XMLHttpRequest();
+// xhr.open("GET","https://restcountries.com/v3.1/all",true);
+// xhr.send();
+// xhr.onload=function(){
+//     if(xhr.status>=200 && xhr.status<=300){
+//         let data =JSON.parse(this.response);
+    
+//         let result=data.filter(function(item){
+//                 if(item.currencies.USD){
+//                 console.log(item.name.common)}
+//         })
+        
+//     }
+// }
